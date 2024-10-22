@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --main-clr: #FFAE5D;
+    --txt-clr: #000000;
+    --txt-clra: #606060;
+    --dscnt-clr: #FF3232;
+}
+
+/* RESET STYLES */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: "poppins";
+    max-width: 100%;
+    height: 100vh;
+    
+}
+
+h1{
+    color: var(--txt-clr);
+}
+
+p{
+    color: var(--txt-clr);
+}
+.bx{
+    color: #000000;
+}
+
+a{
+    color: var(--txt-clra);
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* HEADER SECTION */
+
+.header{
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.header-icons .bx{
+    transition: 0.3s ease-in-out;
+}
+
+.header-icons .bx:hover{
+    color: var(--main-clr); 
+}
+.logo{
+    display: flex;
+}
+.logo h1 span{
+    font-size: 32px;
+    font-weight: 800;
+}
+.header span{
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--main-clr);
+    
+}
+
+/* Location/Searchbar Style */
+
+.location{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.location button{
+    width: 152px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background: var(--main-clr);
+    color: var(--txt-clr);
+    transition: 0.3s ease-in-out;
+}
+.location button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.location button i {
+    color: inherit;
+    
+}
+
+
+.location-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-bar{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+     
+}
+
+.search{
+    width: 322px;
+    height: 36px;
+    border: 1px solid  #808080;
+    border-radius: 20px;
+    padding: 15px;  
+    
+}
+
+/* Categories Style */
+
+.categories a{
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+.categories a:hover{
+    color: var(--main-clr);
+}
+
+.categories ul{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    gap: 15px;
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* HERO STYLE */
+
+.hero{
+    max-width: 80%;
+    max-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    max-height: 100vh;
+}
+.item-title{
+    font-size: 24px;
+    margin-top: 50px;
+    
+}
+.item-title .line{
+   
+    margin-top: 20px;
+    width: 100%;
+    border-bottom:2px dashed var(--main-clr);
+  
+    
+}
+.hero-content{
+    margin-top: -100px;
+    width: 35%;
+}
+.hero span{
+    color: var(--main-clr);
+    font-weight: bold;
+}
+.hero-content h1{
+    font-size: 70px;
+    font-weight: 400;
+}
+.products-wrapper{
+    flex: 70%;
+}
+.products-list{
+    max-height:  100vh;
+    max-width: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.item img{
+    
+    width: 100%;
+}
+.item{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    padding: 10px;
+    width: 230px;
+    height: 335px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    margin-top: 30px;
+  
+ 
+}
+
+.item:hover{
+    transform: translateY(-1.1rem);
+    background-color: #ffae5d5a;
+    border-radius: 2px;
+}
+
+.item-price{
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    gap: 80px;
+}
+
+.red{
+    color: var(--dscnt-clr);
+}
+
+
+
+
+   
+@media (max-width: 1500px){
+    .hero-content h1{
+        font-size: 60px;
+    }
+    .hero-content{
+        width: 500px;
+      
+    }
+}
+@media(max-width: 1200px){
+    .hero{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero-content{
+        width: 100%;
+      
+        margin-top: 30px;
+    }
+    .hero-content h1{
+        text-align: center;
+        font-size: 40px;
+        max-width: 100%;
+       
+    }
+   
+    
+}
+
+@media (max-width: 680px){
+
+    .search-bar{
+        display: none;
+    }
+}
